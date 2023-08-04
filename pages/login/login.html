@@ -20,27 +20,57 @@
             <div id="toogle">
                 <div id="toggle-btns">
                     <div id="active-toggle"></div>
-                    <button class="toggle-btn">Log in </button>
-                    <button id="tbtn-2" class="toggle-btn"> Sign up</button>
+                    <button class="toggle-btn" onclick="logiin()">Log in </button>
+                    <button id="tbtn-2" class="toggle-btn" onclick="siup()"> Sign up</button>
 
                 </div>
             </div>
 
-            <form action="" class="cridentials">
-                <label for="Username">
-                    <i class="ri-user-3-fill"></i>
-                    <input type="text" placeholder=" Username" class="dtails" required>
-                </label>
+            <div id="formdiv-1">
 
-                <label for="password">
-                    <i class="ri-key-fill"></i>
-                    <input type="password" placeholder="password" class="dtails" required>
+                <form action="" class="cridentials">
+                    <label for="Username">
+                        <i class="ri-user-3-fill"></i>
+                        <input type="text" placeholder=" Username" class="dtails" required>
+                    </label>
 
-                </label>
-            </form>
-            <div id="login-btn">
-                <button id="log-in">Log in </button>
+                    <label for="password">
+                        <i class="ri-key-fill"></i>
+                        <input type="password" placeholder="password" class="dtails" required>
+
+                    </label>
+                    <div class="checktext">
+
+                        <input type="checkbox"><span>remember me</span>
+                    </div>
+                </form>
+                <div id="login-btn">
+                    <button id="log-in">Log in </button>
+                </div>
             </div>
+            <div id="formdiv-2">
+                <form action="" id="cpart-2" class="cridentials">
+                    <label for="Username">
+                        <i class="ri-user-3-fill"></i>
+                        <input type="email" placeholder=" Email" class="dtails" required>
+                    </label>
+
+                    <label for="password">
+                        <i class="ri-key-fill"></i>
+                        <input type="password" placeholder="password" class="dtails" required>
+
+
+                    </label>
+                    <div class="checktext" id="checktext-2">
+                        <input type="checkbox"><span>i agree to terms & conditions</span>
+
+                    </div>
+                </form>
+                <div id="login-btn">
+                    <button id="log-in">Sign Up</button>
+                </div>
+            </div>
+
 
             <div id="more-options">
                 <h3>or</h3>
@@ -53,6 +83,8 @@
             </div>
         </div>
     </div>
+
+    <script src="login.js"></script>
 
 </body>
 

@@ -35,6 +35,7 @@ body:before {
     background-color: #ffff;
     height: 50%;
     border-radius: 10px;
+    overflow: hidden;
     width: 25%;
     z-index: 999;
     position: relative;
@@ -85,23 +86,54 @@ tbtn-2 {
     height: 100%;
     width: 50%;
     position: absolute;
-    background-image: linear-gradient(to right, #ffffff, #f2f2f2, #e5e5e5, #d9d9d9, #cccccc);
-    top: 0;
     left: 0;
+    top: 0;
+    background-color: #ddd;
+    opacity: 0.3;
     border-radius: 50px;
     transition: 0.3s;
 }
 
-
-
-
-.cridentials {
-    height: 35%;
+#formdiv-1 {
+    height: 40%;
     display: flex;
     flex-direction: column;
     gap: 10%;
+    position: absolute;
+    left: 30%;
+    transition: 0.3s all ease;
+}
+
+#formdiv-2 {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    position: absolute;
+    left: 100%;
+    transition: 0.3s all ease;
+}
+
+.checktext {
+    margin-top: 10%;
+    font-size: 10px;
+    display: flex;
+    position: absolute;
+    left: 10%;
+    gap: 10px;
+    bottom: 2%;
+
+}
+
+.cridentials {
+    position: relative;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 12%;
     align-items: center;
     justify-content: center;
+    padding: 10%;
 }
 
 .dtails {
@@ -110,6 +142,7 @@ tbtn-2 {
     border-top: 0;
     outline: none;
     border-right: 0;
+    margin-bottom: 2%;
     padding-left: 2px;
     width: 80%;
 }
@@ -117,13 +150,14 @@ tbtn-2 {
 #login-btn {
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-left: 23%;
+    width: 100%;
 
 }
 
 #log-in {
     width: 50%;
-    padding: 2%;
+    padding: 5%;
     border-radius: 20px;
     border: none;
     outline: none;
@@ -135,11 +169,16 @@ tbtn-2 {
     flex-direction: column;
     gap: 20%;
     align-items: center;
+    position: absolute;
     padding: 2%;
+    bottom: 0%;
+    left: 33%;
+
 }
 
 #more-options>h3 {
     font-weight: 200;
+    margin-left: 73%;
 }
 
 .social {
@@ -161,10 +200,11 @@ tbtn-2 {
 
 
 
-@media (max-width:700px) {
+@media (max-width:900px) {
     .mainContainer {
         height: 50%;
-        width: 85%;
+        width: 82%;
+        overflow: hidden;
     }
 
     #logo {
@@ -175,7 +215,7 @@ tbtn-2 {
     #toogle {
         display: flex;
         align-items: center;
-        padding: 2% 2%;
+        padding: 2% 1%;
         justify-content: center;
         width: 100%;
 
@@ -184,14 +224,14 @@ tbtn-2 {
     #toggle-btns {
         position: relative;
         border: 2px solid #ccc;
-        width: 45%;
-        padding: 2% 5%;
+        width: 180px;
+        padding: 6px 10px;
         border-radius: 30px;
     }
 
     #toggle-btns button {
         border: none;
-        padding: 1% 5.6%;
+        padding: 1% 17px;
         outline: none;
         background: transparent;
     }
@@ -209,13 +249,36 @@ tbtn-2 {
 
     }
 
-    .cridentials {
-        height: 35%;
+    #formdiv-1 {
+        height: 40%;
         display: flex;
         flex-direction: column;
-        gap: 10%;
+        gap: 10px;
+        position: absolute;
+        left: 28%;
+        transition: 0.3s all ease;
+    }
+
+    #formdiv-2 {
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        position: absolute;
+        left: 150%;
+        transition: 0.3s all ease;
+    }
+
+
+
+
+    .cridentials {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 12%;
         align-items: center;
-        justify-content: center;
+        padding-left: 5%;
     }
 
     .dtails {
@@ -227,41 +290,54 @@ tbtn-2 {
         padding-left: 2px;
     }
 
+    .checktext {
+        font-size: 11px;
+        position: relative;
+        left: 1%;
+        top: 3%;
+        display: flex;
+        gap: 4px;
+    }
+
     #login-btn {
         display: flex;
         align-items: center;
-        justify-content: center;
 
     }
 
     #log-in {
-        width: 40%;
-        padding: 2%;
+        width: 50%;
+        padding: 5%;
         border-radius: 20px;
         border: none;
         outline: none;
     }
 
     #more-options {
-        height: 30%;
+        height: 27%;
+        width: 50%;
         display: flex;
         flex-direction: column;
-        gap: 20%;
+        gap: 20px;
         align-items: center;
         padding: 2%;
+        position: absolute;
+        bottom: 17px;
+        left: 26%;
     }
 
     #more-options>h3 {
         font-weight: 200;
+        margin-left: -7px;
+        margin-top: 5px;
     }
 
     .social {
         display: flex;
         gap: 10%;
-        height: 30%;
-        padding-left: 25%;
+        height: 20%;
+        padding-left: 16%;
         align-items: center;
-
         width: 100%;
     }
 
@@ -272,6 +348,33 @@ tbtn-2 {
 
 
     }
+}
+
+@media (max-width:400px) {
+
+    .cridentials {
+        width: 80%;
+        border: 2px solid red;
+    }
 
 
+    #formdiv-1 {
+        left: 25%;
+    }
+
+    #login-btn {
+        width: 30%;
+    }
+
+    #log-in {
+        width: 100%;
+    }
+
+    #more-options {
+        left: 22%;
+    }
+
+    #more-options>h3 {
+        margin-left: 19%;
+    }
 }
