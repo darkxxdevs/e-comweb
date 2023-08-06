@@ -120,6 +120,34 @@ body {
     text-decoration: none;
 }
 
+#navtwo ul a li {
+    border: 2px solid red;
+}
+
+.drop-window {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1px;
+    background-color: #ffff;
+    z-index: 1000;
+    display: none;
+    transition: 0.3s all ease;
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    gap: 15%;
+}
+
+.drop-window a {
+    margin-bottom: 9%;
+    border-width: 50%;
+}
+
+.drop-control:hover .drop-window {
+    display: flex;
+
+}
+
 
 @media (max-width:800px) {
 
@@ -166,6 +194,8 @@ body {
     width: 100%;
     position: relative;
     overflow-x: hidden;
+    z-index: -5;
+    transition: 0.9s all ease;
 }
 
 .swiper {
