@@ -7,3 +7,4 @@ searchInput.addEventListener("click", () => {
 searchInput.addEventListener("blur", () => {
     searchInput.placeholder = "Search for products brands and more "
 })
+
