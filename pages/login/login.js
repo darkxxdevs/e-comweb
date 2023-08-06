@@ -37,7 +37,7 @@ else if (isUltraSmoll()) {
     }
     function logiin() {
         toogleActive.style.left = '0%'
-        login.style.left = "40%"
+        login.style.left = "28%"
         signUp.style.left = "112%"
     }
 }
