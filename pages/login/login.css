@@ -354,12 +354,11 @@ tbtn-2 {
 
     .cridentials {
         width: 80%;
-        border: 2px solid red;
     }
 
 
     #formdiv-1 {
-        left: 25%;
+        left: 26%;
     }
 
     #login-btn {

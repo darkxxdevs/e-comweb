@@ -131,7 +131,6 @@ body {
     background-color: #ffff;
     z-index: 1000;
     display: none;
-    transition: 0.3s all ease;
     position: absolute;
     width: 100px;
     text-align: center;
@@ -145,7 +144,6 @@ body {
 
 .drop-control:hover .drop-window {
     display: flex;
-
 }
 
 
@@ -358,6 +356,124 @@ body {
 
 }
 
+
+#page-3 {
+    width: 100%;
+    background-color: #ffff;
+}
+
+.discounts {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 5%;
+    border: 2px solid red;
+}
+
+.dis {
+    height: 100%;
+    width: 45%;
+    border-radius: 50px;
+    position: relative;
+}
+
+#dis-1 {
+    background: url(https://images.unsplash.com/photo-1558021212-51b6ecfa0db9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1183&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#dis-2 {
+    background: url(https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#offer-info-1 {
+    height: 20%;
+    width: 40%;
+    position: absolute;
+    bottom: 2%;
+    left: 10%;
+
+}
+
+.offer-text-1 {
+    padding-left: 20%;
+    color: #fff;
+}
+
+.offer-text-2 {
+    padding-left: 30%;
+    color: #ffff;
+    font-size: 30px;
+    margin-bottom: 7%;
+}
+
+.shop-button {
+    margin-left: 35%;
+    padding: 5% 10%;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    transition: 0.3s all ease;
+    outline: 0;
+}
+
+#offer-info-2 {
+    height: 20%;
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+}
+
+
+#offer-text-2-1st {
+    padding-left: 10%;
+
+}
+
+#offer-text-2-2nd {
+    padding-left: 40%;
+    margin-bottom: 3%;
+}
+
+#shop-button-gym {
+    padding: 3% 6%;
+}
+
+.shop-button:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width:600px) {
+    .discounts {
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    .dis {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    #offer-info-1 {
+        bottom: 1%;
+    }
+
+    .offer-text-1 {
+        font-size: 15px;
+    }
+
+    .offer-text-2 {
+        font-size: 15px;
+    }
+}
+
+
 #footer {
     height: 60vh;
     width: 100vw;
@@ -486,6 +602,7 @@ body {
     }
 
     .other-device-footer {
+        display: block;
         width: 100%;
         height: 100%;
 

@@ -31,14 +31,14 @@ if (isMobileDevice()) {
 else if (isUltraSmoll()) {
     function siup() {
         toogleActive.style.left = '50%'
-        login.style.left = "-112%"
-        signUp.style.left = "40%"
+        login.style.left = "-100%"
+        signUp.style.left = "50%"
 
     }
     function logiin() {
         toogleActive.style.left = '0%'
-        login.style.left = "28%"
-        signUp.style.left = "112%"
+        login.style.left = "50%"
+        signUp.style.left = "100%"
     }
 }
 
