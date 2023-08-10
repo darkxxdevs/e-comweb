@@ -24,7 +24,7 @@
             </div>
 
             <div id="user-utils">
-                <a href="#"><i class="ri-search-line" id="mobile-search"></i></a>
+                <a href="#" onclick="showFloatingSearch()"><i class="ri-search-line" id="mobile-search"></i></a>
                 <a href="#"><i class="ri-heart-3-line"></i></a>
                 <a href="#"><i class="ri-shopping-cart-line"></i></a>
                 <a href="#"><i class="ri-user-3-fill" id="user-menu"></i></a>
@@ -33,6 +33,13 @@
             </div>
 
         </nav>
+        <div class="floating-search-div">
+            <div class="mobile-search-bar">
+                <input type="text" placeholder="Search for products" id="floating-input-bar">
+                <button id="floating-search-button"><i class="ri-arrow-right-line"></i></button>
+                <button id="floating-close-btn" onclick="closeFloatingSearch()"><i class="ri-close-line"></i></button>
+            </div>
+        </div>
         <div id="navtwo">
             <ul>
                 <a href="#">
