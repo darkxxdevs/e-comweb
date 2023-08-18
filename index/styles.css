@@ -246,13 +246,14 @@ body {
 
 .swiper .swiper-slide {
     height: 100%;
-    width: 100%;
+    width: 100vh;
     background-color: #ccc;
 }
 
 .swiper-slide img {
     height: 100%;
     width: 100%;
+    aspect-ratio: 10/9;
     object-fit: contain;
 }
 

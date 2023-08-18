@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    background-color: #ddd;
+    display: flex;
+}
+
+.products {
+    width: 70%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.payments {
+    height: 100vh;
+    width: 30%;
+
+}
+
+#head {
+    height: 20%;
+    width: 100%;
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+
+#head-item-2 {
+    color: grey;
+}
+
+.cart-items {
+    background-color: #fff;
+    height: 24%;
+    border-top: 1px solid #ccc;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-image {
+    height: 80%;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+}
+
+.item-image img {
+    height: 70%;
+}
+
+#item-3 .item-image {
+    margin-right: -3%;
+}
+
+#item-3 .item-image img {
+    aspect-ratio: 10/9;
+    height: 70%;
+    margin-top: 13%;
+
+    object-fit: contain;
+
+}
+
+.item-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+#item-1 .item-desc {
+    margin-right: -4%;
+}
+
+.item-desc-head {
+    color: #ccc;
+}
+
+.item-quantity {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dec-quantity {
+    background: transparent;
+    border: none;
+    font-weight: 900;
+}
+
+.inc-quantity {
+    background: transparent;
+    border: none;
+    font-weight: 900;
+}
+
+.quantity-field {
+    padding: 10px 30px;
+    width: 50%;
+    border-radius: 30px;
+    border: 2px solid #ccc;
+    outline: none;
+
+}
+
+.item-price {
+    color: grey;
+}
+
+.item-delete {
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.delete-btn {
+    background: transparent;
+    font-size: 19px;
+    border: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#back-button {
+    border-top: 1px solid #ccc;
+    width: 80%;
+    margin-left: 10%;
+    padding: 2%;
+}
+
+#back-button a {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+}
+
+.payments-title {
+    border-bottom: 1px solid grey;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    padding-left: 2%;
+}
+
+.payments-title h1 {
+    color: grey;
+}
+
+.payment-details {
+    border-bottom: 1px solid grey;
+    height: 50%;
+    margin: 10% 0;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.detail-mem {
+    width: 100%;
+    height: 35%;
+}
+
+#cred-listing {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 10%;
+}
+
+.items-qtn {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+}
+
+.item-price-py {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 19px;
+    font-weight: 700;
+}
+
+#shpng-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 5%;
+}
+
+.shpng-txt {
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+}
+
+.select {
+    padding: 20px 20px;
+    outline: none;
+    width: 85%;
+    border: 1px solid gray;
+    background: transparent;
+    color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+#code-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 5%;
+}
+
+#code-block {
+    padding: 20px 20px;
+    width: 85%;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-bottom: 10%;
+
+}
+
+#code-text {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#code-block::placeholder {
+    font-size: 17px;
+
+}
+
+.total-price-section {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.total {
+    display: flex;
+    align-items: center;
+    height: 20%;
+    justify-content: space-between;
+    padding: 0px 6%;
+}
+
+.total-text {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.total-price {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.btn-reg {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#register-button {
+    padding: 2% 11%;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    outline: none;
+}

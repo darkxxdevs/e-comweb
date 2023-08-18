@@ -25,8 +25,7 @@
 
             <div id="user-utils">
                 <a href="#" onclick="showFloatingSearch()"><i class="ri-search-line" id="mobile-search"></i></a>
-                <a href="#"><i class="ri-heart-3-line"></i></a>
-                <a href="#"><i class="ri-shopping-cart-line"></i></a>
+                <a href="/pages/wishlist/wishlist.html"><i class="ri-shopping-cart-line"></i></a>
                 <a href="/pages/login/login.html"><i class="ri-user-3-fill" id="user-menu"></i></a>
 
                 <a href="/pages/login/login.html"><button id="login"> login </button></a>
@@ -124,22 +123,24 @@
         <div class="slider">
             <div class="swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img
-                            src="https://images.unsplash.com/photo-1544441893-675973e31985?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1544441893-675973e31985?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                             alt="slide-1">
                     </div>
-                    <div class="swiper-slide"><img
-                            src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1420&q=80"
-                            alt="slide-2"></div>
-                    <div class="swiper-slide"><img
-                            src="https://images.unsplash.com/photo-1655563095740-31a2f31679e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                            alt="slide-3"></div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1420&q=80"
+                            alt="slide-2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1655563095740-31a2f31679e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="slide-3">
+                    </div>
                     ...
                 </div>
                 <div class="swiper-pagination"></div>
 
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+
+
             </div>
 
         </div>
@@ -331,24 +332,18 @@
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
-            direction: 'horizontal',
+        var swiper = new Swiper(".swiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
             loop: true,
             autoplay: {
-                delay: 2000,
+                delay: 2500,
                 disableOnInteraction: false,
             },
-
             pagination: {
-                el: '.swiper-pagination',
+                el: ".swiper-pagination",
                 clickable: true,
             },
-
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
         });
     </script>
 </body>
