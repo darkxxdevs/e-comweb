@@ -295,3 +295,40 @@ body {
     border: none;
     outline: none;
 }
+
+@media (max-width:800px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .products {
+        width: 100%;
+    }
+
+    .payments {
+        width: 100%;
+    }
+
+    #head {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .cart-items {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .payments-title {
+        justify-content: center;
+    }
+
+    .detail-mem {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #code-block {
+        outline: none;
+    }
+}
