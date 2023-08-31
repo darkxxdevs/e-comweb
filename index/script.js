@@ -1,6 +1,15 @@
 const searchInput = document.getElementById("search");
 const searchMobile = document.querySelector(".floating-search-div");
 const floatingInputBar = document.getElementById("floating-input-bar");
+const loader = document.getElementById("preloader");
+
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        loader.style.display = "none";
+    }, 2000)
+
+});
 
 searchInput.addEventListener("click", () => {
     searchInput.placeholder = ""
