@@ -443,7 +443,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5% 5%;
+    padding: 5% 2%;
 }
 
 .dis {
@@ -725,4 +725,38 @@ body {
         text-decoration: none;
         color: #000;
     }
+}
+
+@media (max-width:400px) {
+    #offer-info-2 {
+        bottom: 8%;
+
+    }
+}
+
+@media (min-width:1000px) {
+    .dis {
+        height: 100%;
+        width: 49%;
+        border-radius: 20px;
+    }
+
+    #offer-info-1 {
+        bottom: 16%;
+    }
+
+    #offer-info-2 {
+        bottom: 16%;
+    }
+
+    #menu {
+        font-size: 2vw;
+    }
+
+    #search-bar {
+        margin-left: -5%;
+    }
+
+
+
 }
