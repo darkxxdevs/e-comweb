@@ -190,6 +190,6 @@ form {
 
 @media (max-width:450px) {
     form {
-        height: 400px;
+        height: 500px;
     }
 }
