@@ -91,8 +91,8 @@ form {
 
 @media (max-width:900px) {
     form {
-        width: 70%;
-        height: 50%;
+        width: 80%;
+        height: 490px;
         padding: 10%;
     }
 
