@@ -14,5 +14,5 @@ pass.addEventListener("click", () => {
     pass.placeholder = " "
 })
 pass.addEventListener("blur", () => {
-    pass.placeholder = "Enter password"
+    pass.placeholder = "Create a password"
 })
